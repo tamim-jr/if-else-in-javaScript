@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>If else in JavaScript</title>
     <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h2>If else in JavaScript</h2>
+    <div class="votar-cal">
+        <h2>If else in JavaScript</h2>
+
+        <h3>Find your Voter age in here</h3>
+        <input type="text" id="age">
+        <button id="submit">click</button>
+        <p id="result"></p>
+    </div>
+<!-- voter calculator js file -->
+    <script>
+        document.getElementById("submit").addEventListener("click", function () {
+            let value = document.getElementById("age").value;
+            if (value >= 18) {
+                console.log("You are a voter");
+                document.getElementById("result").innerText = "You are a Voter";
+            }
+            else {
+                console.log("You are not a voter");
+                document.getElementById("result").innerText = "You are not a Voter";
+            }
+        });
+    </script>
 </body>
+
 </html>
