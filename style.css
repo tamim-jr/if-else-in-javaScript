@@ -1,5 +1,7 @@
 .votar-cal{
-    margin: 100px 0 0 0;
+    margin-top: 20px;
+    padding: 25px;
+    background-color: bisque;
     text-align: center;
 }
 input{
@@ -12,8 +14,41 @@ button{
     background-color: blueviolet;
     color: white;
     height: 35px;
-    width: 45px;
+    width: 90px;
     border-radius: 5px;
     box-shadow: none;
     border: 0px;
+}
+#result{
+    font-size: 25px;
+    font-weight: 500;
+}
+.home{
+    text-decoration: none;
+    font-size: 25px;
+}
+#job-page{
+    text-decoration: none;
+    font-size: 25px;
+}
+.job-cal{
+    margin: 20px 0 0 0;
+    text-align: center;
+    padding: 25px;
+    background-color: bisque;
+}
+.job-link{
+    text-align: center;
+}
+.job-btn{
+    width: 90px;
+}
+.job-btn > a{
+    text-decoration: none;
+    color: white; 
+}
+
+#job-result{
+    font-size: 25px;
+    font-weight: 500;
 }

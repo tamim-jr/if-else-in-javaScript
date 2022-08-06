@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Project in Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="home" href="index.html">Home</a>
+    <div class="job-cal">
+        <h2>Check here whether you will get job</h2>
+        <h2>Type your full name </h2>
+        <input type="text" name="" id="nam" placeholder="Type your name">
+        <br><br>
+        <h2>Type your age</h2>
+        <input type="number" name="" id="age" placeholder="Type your age">
+        <br><br>
+        <h2>How many years of experience do you have?</h2>
+        <input type="number" name="" id="exp" placeholder="Type your experience">
+    
+        <br><br>
+        <button id="click-btn">Click Here</button>
+        <p id="job-result"></p>
+        <script>
+    
+            document.getElementById("click-btn").addEventListener("click", function () {
+    
+                let nam = document.getElementById("nam").value;
+                let age = document.getElementById("age").value;
+                let exp = document.getElementById("exp").value;
+    
+                if (age >= 18 && exp >= 2) {
+                    document.getElementById("job-result").innerText = (" Yes! You are qualified.");
+                } else {
+                    document.getElementById("job-result").innerText = ("Sorry try again later");
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
+

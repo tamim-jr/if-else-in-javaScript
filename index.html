@@ -11,21 +11,22 @@
 </head>
 
 <body>
+    <a id="job-page" href="jobcal.html">Job Page</a>
     <div class="votar-cal">
-        <h2>If else in JavaScript</h2>
+        <h2>Find yur voter age in here</h2>
 
-        <h3>Find your voting age here</h3>
+        <h3>Type your age</h3>
         <input type="text" id="age" placeholder="Type your age">
-        <button id="submit">click</button>
+        <button id="submit">Click Now</button>
         <p id="result"></p>
     </div>
-<!-- voter calculator js file -->
+    <!-- voter calculator js file -->
     <script>
         document.getElementById("submit").addEventListener("click", function () {
             let value = document.getElementById("age").value;
             if (value >= 18) {
                 console.log("You are a voter");
-                document.getElementById("result").innerText = "You are a Voter";
+                document.getElementById("result").innerText = "Yes ! You are a Voter";
             }
             else {
                 console.log("You are not a voter");
@@ -33,6 +34,11 @@
             }
         });
     </script>
+<br>
+<div class="job-link">
+<h2>Check here whether you will get job</h2> 
+<button class="job-btn"><a href="jobcal.html"> Click here</a></button>
+</div>
 </body>
 
 </html>

@@ -31,4 +31,15 @@ else {
     console.log("You are not a voter");
 };
 
+//job if else 
 
+let nam = "Tamim";
+let age = 31;
+let degree = true;
+let experience = 2;
+
+if (age >= 2 && degree == true){
+    console.log(nam + " Yes! You are qualified.");
+} else{
+    console.log("Sorry try again later");
+}
