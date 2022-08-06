@@ -2,3 +2,18 @@
     margin: 100px 0 0 0;
     text-align: center;
 }
+input{
+    height: 30px;
+    border-radius: 6px;
+    background-color: azure;
+    font-size: 25=0px;
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    height: 35px;
+    width: 45px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 0px;
+}
